@@ -16,8 +16,6 @@
 		FEA1C5FF206E2D4600DCFB9C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA1C5FE206E2D4600DCFB9C /* NotificationCenter.framework */; };
 		FEA1C603206E2D4600DCFB9C /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA1C602206E2D4600DCFB9C /* TodayViewController.m */; };
 		FEA1C60A206E2D4600DCFB9C /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FEA1C5FC206E2D4600DCFB9C /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		FEE6916620722E57002E1516 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA1C5FE206E2D4600DCFB9C /* NotificationCenter.framework */; };
-		FEE6917120722E58002E1516 /* SecondWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FEE6916520722E57002E1516 /* SecondWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +26,6 @@
 			remoteGlobalIDString = FEA1C5FB206E2D4600DCFB9C;
 			remoteInfo = TodayWidget;
 		};
-		FEE6916F20722E58002E1516 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEA1C5D7206E2CFA00DCFB9C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FEE6916420722E57002E1516;
-			remoteInfo = SecondWidget;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +35,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				FEE6917120722E58002E1516 /* SecondWidget.appex in Embed App Extensions */,
 				FEA1C60A206E2D4600DCFB9C /* TodayWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -70,7 +60,6 @@
 		FEA1C607206E2D4600DCFB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEE6915F20721AB9002E1516 /* MCWidgetDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MCWidgetDemo.entitlements; sourceTree = "<group>"; };
 		FEE6916020721AD2002E1516 /* TodayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayWidget.entitlements; sourceTree = "<group>"; };
-		FEE6916520722E57002E1516 /* SecondWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SecondWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +75,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEA1C5FF206E2D4600DCFB9C /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEE6916220722E57002E1516 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FEE6916620722E57002E1516 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +96,6 @@
 			children = (
 				FEA1C5DF206E2CFA00DCFB9C /* MCWidgetDemo.app */,
 				FEA1C5FC206E2D4600DCFB9C /* TodayWidget.appex */,
-				FEE6916520722E57002E1516 /* SecondWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,7 +152,6 @@
 			);
 			dependencies = (
 				FEA1C609206E2D4600DCFB9C /* PBXTargetDependency */,
-				FEE6917020722E58002E1516 /* PBXTargetDependency */,
 			);
 			name = MCWidgetDemo;
 			productName = MCWidgetDemo;
@@ -194,23 +173,6 @@
 			name = TodayWidget;
 			productName = TodayWidget;
 			productReference = FEA1C5FC206E2D4600DCFB9C /* TodayWidget.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		FEE6916420722E57002E1516 /* SecondWidget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FEE6917220722E58002E1516 /* Build configuration list for PBXNativeTarget "SecondWidget" */;
-			buildPhases = (
-				FEE6916120722E57002E1516 /* Sources */,
-				FEE6916220722E57002E1516 /* Frameworks */,
-				FEE6916320722E57002E1516 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SecondWidget;
-			productName = SecondWidget;
-			productReference = FEE6916520722E57002E1516 /* SecondWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -240,10 +202,6 @@
 							};
 						};
 					};
-					FEE6916420722E57002E1516 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = FEA1C5DA206E2CFA00DCFB9C /* Build configuration list for PBXProject "MCWidgetDemo" */;
@@ -261,7 +219,6 @@
 			targets = (
 				FEA1C5DE206E2CFA00DCFB9C /* MCWidgetDemo */,
 				FEA1C5FB206E2D4600DCFB9C /* TodayWidget */,
-				FEE6916420722E57002E1516 /* SecondWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -278,13 +235,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FEA1C5FA206E2D4600DCFB9C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEE6916320722E57002E1516 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -312,13 +262,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FEE6916120722E57002E1516 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -326,11 +269,6 @@
 			isa = PBXTargetDependency;
 			target = FEA1C5FB206E2D4600DCFB9C /* TodayWidget */;
 			targetProxy = FEA1C608206E2D4600DCFB9C /* PBXContainerItemProxy */;
-		};
-		FEE6917020722E58002E1516 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FEE6916420722E57002E1516 /* SecondWidget */;
-			targetProxy = FEE6916F20722E58002E1516 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,34 +456,6 @@
 			};
 			name = Release;
 		};
-		FEE6917320722E58002E1516 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JB79VQ5W7K;
-				INFOPLIST_FILE = SecondWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rs.MCWidgetDemo.SecondWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FEE6917420722E58002E1516 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JB79VQ5W7K;
-				INFOPLIST_FILE = SecondWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rs.MCWidgetDemo.SecondWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,15 +482,6 @@
 			buildConfigurations = (
 				FEA1C60C206E2D4600DCFB9C /* Debug */,
 				FEA1C60D206E2D4600DCFB9C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FEE6917220722E58002E1516 /* Build configuration list for PBXNativeTarget "SecondWidget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FEE6917320722E58002E1516 /* Debug */,
-				FEE6917420722E58002E1516 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

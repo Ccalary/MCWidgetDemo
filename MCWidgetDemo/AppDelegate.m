@@ -49,8 +49,8 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
     if ([url.scheme isEqualToString:@"TodayWidget"]){
-        //这里可以发送通知等
-//        return YES;
+         //这里监听到是通过widget打开，可以进行发送通知等操作
+        return YES;
     }
     return NO;
 }

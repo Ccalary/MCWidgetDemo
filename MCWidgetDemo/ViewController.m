@@ -20,6 +20,8 @@
     NSUserDefaults *sharedData = [[NSUserDefaults alloc] initWithSuiteName:@"group.rs.testGroup"];
     [sharedData setValue:@"Mr Right" forKey:@"name"];
     [sharedData synchronize];
+    
+    [self saveFile];
 }
 
 
@@ -28,5 +30,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+// NSFileManager 存储数据
+- (void)saveFile {
+    NSError *error = nil;
+    NSURL *containUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.rs.testGroup"];
+   containUrl = [containUrl URLByAppendingPathComponent:@"group.data"];
+    NSString *text = @"打开app";
+    BOOL result = [text writeToURL:containUrl atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    if (result){
+        NSLog(@"save success");
+    }else {
+        NSLog(@"error:%@", error);
+    }
+}
 
 @end
